@@ -1,0 +1,106 @@
+version: 1
+source: DataHub
+owners:
+   users:
+     - flaforgia
+   groups:
+     - Modelers
+nodes:     
+   - name: AVIV 
+     description: Data models glossary
+     nodes:
+       - name: Global
+         description: Terms global to AVIV
+         nodes:
+           - name: Business Terms
+             description: Business glossary
+             nodes:
+                - name: Geolocation
+                  description: Geolocation informations 
+                - name: User
+                  description: Users information
+           - name: Analytics Metrics
+             description: terms used by Frowth And Analytcs
+             nodes:   
+                - name: KPI
+                  description: Metrics used across AVIV   
+       - name: Data Models
+         description: AVIV Data Model Catalog
+         nodes:
+           - name: enums
+             description: Enumerations used by the models
+             nodes:
+                - name: AccountType
+                  description: Type of accounts that is managed by AVIV
+                - name: EstateType
+                  description: The general type of the estate property. For a more detailed description, use a subtype. Only one couple (estateType, estateSubType) to describe a property
+                  terms:
+                     - name: agricultureForestry
+                       description: 
+                             <h3>Description</h3>
+
+
+                              ---
+
+
+                             Agroforestry is agricultural and forestry systems that tries to balance various needs:<br> 1. to produce trees for timber and other commercial purposes<br> 2. t
+o produce a diverse, adequate supply of nutritious foods both to meet global demand and to satisfy the needs of the producers themselves<br> 3. to ensure the protection of the natural envir
+onment so that it continues to provide resources and environmental services to meet the needs of the present generations and those to come.<br>
+                             <br>
+
+                             <h3>Item Definition</h3>
+
+
+                             ----
+
+
+                             **__Type:__** ENUM item<br>
+                             **__Format:__** String<br>
+                             **__Synomyms:__** [Related Terms](http://logicielpasithea.com:9002/glossaryTerm/urn:li:glossaryTerm:ca64ec7412b35dcb80406fd15c9634cd/Related%20Terms?is_lineage_
+mode=false) 
+#                       description: Agroforestry is agricultural and forestry systems that tries to balance various needs:<br> 
+#                                    1. to produce trees for timber and other commercial purposes<br>
+#                                    2. to produce a diverse, adequate supply of nutritious foods both to meet global demand and to satisfy the needs of the producers themselves<br>        
+     
+#                                    3. to ensure the protection of the natural environment so that it continues to provide resources and environmental services to meet the needs of the pre
+sent generations and those to come.<br>
+                       inherits: 
+                           - Brands.IWB.LAND
+                           - Brands.GSL.immobc.loft
+                           - Brands.GSL.poliris.Maison
+                       #custom_properties:
+                           #has_synonyms: yes
+                           #synonyms: [IWB_Land](https://google.com) 
+
+           - name: classified
+             description: classifieds data model
+             nodes:
+                - name: metadata
+                  description: Related technical information
+                  terms:
+                    - name: createDate
+                      description: creation date of the model
+                      custom_properties:
+                          format: date
+                          source: system
+                          mandatory: N/A
+                          classification: N/A
+                    - name: propertyId
+                      description: unique property ID
+                      custom_properties:
+                          format: id
+                          source: enriched
+                          mandatory: no
+                          classification: internal
+                - name: buildinginfo
+                  description: related to the construction information, infos immuables
+                  terms:
+                    - name: estateType
+                      description: type of property
+                      custom_properties:
+                          format: enum
+                          source: ingested
+                          mandatory: yes
+                          classification: N/A
+                      contains:
+                          - AVIV.Data Models.enums.EstateType.agricultureForestry
