@@ -1,0 +1,28 @@
+version: 1
+source: DataHub
+owners:
+   users:
+     - Francois Laforgia
+   groups:
+     - Business Stewards
+nodes:     
+   - name: AVIV 
+     description: Global AVIV glossary for terms and models unification
+     nodes:
+       - name: Data Models
+         description: AVIV Data Model Catalog
+         nodes:
+           - name: enums
+             description: Enumerations used by the models
+             nodes:
+                - name: AccountType
+                  description: Type of accounts that is managed by AVIV
+                  terms:
+                    - name: PROFESSIONAL_ACCOUNT
+                      description: The account is associated with a Real-estate professional and has specific functionalities linked to the real-estate business
+                      custom_properties:
+                        - status: previous
+                    - name: PERSONAL_ACCOUNT
+                      description: The account is associated with a particular individual and has functionalities oriented for seekers, owners and sellers.
+                      custom_properties:
+                        - status: previous
