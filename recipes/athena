@@ -1,0 +1,6 @@
+source:
+    type: athena
+    config:
+        aws_region: eu-west-1
+        work_group: primary
+        s3_staging_dir: 's3://tdatahub-test'
