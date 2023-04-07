@@ -1,0 +1,155 @@
+version: 1
+source: DataHub
+owners:
+  users:
+    - flaforgia
+  groups:
+    - Modelers
+nodes:
+  # Root Node
+  - name: AVIV
+    description: Data models glossary
+    nodes:
+      # Business Terms
+      - name: Business
+        description: Business terms global to AVIV
+        nodes:
+          - name: Business Terms
+            description: Business glossary
+            nodes:
+              - name: Geolocation
+                description: Geolocation informations
+              - name: User
+                description: Users information
+
+          - name: Data Protection
+            description: Terms used by Data Regulation and Data Security
+            nodes:
+              - name: PII
+                description: Terms used by GDPR
+              - name: Classification
+                description: data classification
+
+          - name: Capabilities
+            description: definition of the capabilities
+
+      - name: Models
+        description: Data Model Catalog
+        nodes:
+          - name: Brands
+            description: Local terms by countries
+            nodes:
+              - name: IWB
+                description: Local terms for Belgium
+                terms:
+                  - name: LAND
+                    description: synonym of agricultureforestry
+                  - name: MEADOW
+                    description: synonym of agricultureforestry
+                  - name: FIELDS
+                    description: synonym of agricultureforestry
+                  - name: APARTEMENT
+                    description: synonym of appartment
+              - name: GSL
+                description: Local terms used by Groupe Se Loger
+                nodes:
+                  - name: immobc
+                    description: Legacy classified management system
+                    terms:
+                      - name: appartement
+                        description: ""
+                      - name: loft
+                        description: ""
+                      - name: atelier
+                        description: ""
+                      - name: surface
+                        description: ""
+                  - name: poliris
+                    description: ""
+                    terms:
+                      - name: Maison
+                        description: synonym of agricultureforestry
+
+          - name: enums
+            description: Enumerations used by the models
+            nodes:
+              - name: AccountType
+                description: Type of accounts that is managed by AVIV
+                terms:
+                  - name: professionalAccount
+                    description: The account is associated with a Real-estate professional and has specific functionalities linked to the real-estate business
+                  - name: personalAccount
+                    description: The account is associated with a particular individual and has functionalities oriented for seekers, owners and sellers.
+              - name: EstateType
+                description: The general type of the estate property. For a more detailed description, use a subtype. Only one couple (estateType, estateSubType) to describe a property
+                terms:
+                  - name: agricultureForestry
+                    description:
+                      Agroforestry is agricultural and forestry systems that tries to balance various needs:<br>
+                      1. to produce trees for timber and other commercial purposes<br>
+                      2. to produce a diverse, adequate supply of nutritious foods both to meet global demand and to satisfy the needs of the producers themselves<br>
+                      3. to ensure the protection of the natural environment so that it continues to provide resources and environmental services to meet the needs of the present generations and those to come.<br>
+                    inherits:
+                      - Models.Brands.IWB.lAND
+                      - Models.Brands.IWB.MEADOW
+                      - Models.Brands.GSL.poliris.Maison
+                  - name: apartment
+                    description: A suite of rooms forming one residence, a flat.
+                    inherits:
+                      - Models.Brands.IWB.APARTMENT
+                      - Models.Brands.GSL.immobc.appartement
+                      - Models.Brands.GSL.immobc.loft
+                      - Models.Brands.GSL.immobc.atelier
+                      - Models.Brands.GSL.immobc.surface
+                      - Models.Brands.GSL.poliris.Appartement
+
+          - name: Data Models
+            description: AVIV Core Data Models
+            nodes:
+              - name: classified
+                description: classifieds data model
+                nodes:
+                  - name: metadata
+                    description: Related technical information
+                    terms:
+                      - name: createDate
+                        description: creation date of the model
+                        custom_properties:
+                          format: date
+                          source: system
+                          mandatory: N/A
+                          classification: N/A
+                      - name: changeDate
+                        description: model modification date
+                        custom_properties:
+                          format: date
+                          source: system
+                          mandatory: N/A
+                          classification: N/A
+                      - name: propertyId
+                        description: unique property ID
+                        custom_properties:
+                          format: id
+                          source: enriched
+                          mandatory: no
+                          classification: internal
+                  - name: buildinginfo
+                    description: related to the construction information, infos immuables
+                    terms:
+                      - name: estateType
+                        description: type of property
+                        custom_properties:
+                          format: enum
+                          source: ingested
+                          mandatory: yes
+                          classification: N/A
+                        contains:
+                          - Models.enums.EstateType.agricultureForestry
+                          - Models.enums.EstateType.appartment
+
+      - name: Analytics
+        description: terms used by Frowth And Analytcs
+        nodes:
+          # KPI
+          - name: KPI
+            description: Metrics used across AVIV
