@@ -1,4 +1,0 @@
-source:
-    type: glue
-    config:
-        aws_region: eu-west-1
