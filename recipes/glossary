@@ -1,5 +1,0 @@
-source:
-    type: datahub-business-glossary
-    config:
-        file: /tmp/DataHub/TestGlossaries/enums.yaml
-        enable_auto_id: true
