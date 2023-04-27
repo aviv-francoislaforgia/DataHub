@@ -1,0 +1,52 @@
+version: 1
+source: DataHub
+owners:
+   users:
+     - Francois Laforgia
+   groups:
+     - Business Stewards
+nodes:     
+   - name: AVIV 
+     description: Global AVIV glossary for terms and models unification
+     nodes:
+       - name: _Data
+         nodes:
+           - name: Enums
+             description: Enumerations used by the models
+             nodes:
+                - name: householdAppliances
+                  terms:
+                    - name: CLOSET
+                      description: A tall cupboard or wardrobe with a door, used for storage.
+                      custom_properties:
+                        status: previous
+                    - name: DISHWASHER
+                      description: A machine for washing dishes automatically.
+                      custom_properties:
+                        status: previous
+                    - name: DRYER_MACHINE
+                      description: A tumble dryer is a household appliance designed to remove moisture from wrung-out clothes after washing.
+                      custom_properties:
+                        status: previous
+                    - name: FREEZER
+                      description: Compartment of a refrigerator where ice is formed.
+                      custom_properties:
+                        status: previous
+                    - name: FRIDGE
+                      description: A refrigerator. 
+                      custom_properties:
+                        status: previous
+                    - name: MICROWAVE
+                      description: oven that allows to defrost or to warm up culinary preparations by placing them on a turntable that undergoes a radiation heating the water molecules
+                      custom_properties:
+                        status: previous
+                    - name: OVEN
+                      description: An enclosed compartment, usually part of a cooker, for cooking and heating food.
+                      custom_properties:
+                        status: previous
+                    - name: WASHING_MACHINE
+                      description: A machine for washing clothes, bed linen, etc.
+                      custom_properties:
+                        status: previous
+
+

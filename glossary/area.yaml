@@ -1,0 +1,78 @@
+version: 1
+source: DataHub
+owners:
+   users:
+     - Francois Laforgia
+   groups:
+     - Business Stewards
+nodes:     
+   - name: AVIV 
+     description: Global AVIV glossary for terms and models unification
+     nodes:
+       - name: _Data
+         nodes:
+           - name: Enums
+             description: Enumerations used by the models
+             nodes:
+                - name: area
+                  terms:
+                    - name: ATTIC
+                      description: The space or room at the top of a building, under the roof
+                      custom_properties:
+                        status: suggested
+                    - name: AUXILIARY_ROOMS
+                      description: Indicates if the property has at least an auxiliary room
+                      custom_properties:
+                        status: suggested
+                    - name: BALCONY
+                      description: A platform that projects from the wall of a building and is enclosed by a parapet or railing.
+                      custom_properties:
+                        status: suggested
+                    - name: BATHROOM
+                      description: Indicates if the property has a bathroom
+                      custom_properties:
+                        status: suggested 
+                    - name: BEDROOM
+                      description: Indicates if the property has a bedroom
+                      custom_properties:
+                        status: suggested
+                    - name: CELLAR
+                      description: The space or room at the top of a building, under the roof
+                      custom_properties:
+                        status: suggested
+                    - name: DINING_ROOM
+                      description: Indicates if the property has a dining room
+                      custom_properties:
+                        status: suggested
+                    - name: ENTRANCE
+                      description: Indicates if the property has an entrance
+                      custom_properties:
+                        status: suggested
+                    - name: GARDEN
+                      description: Indicates if the property has a garden
+                      custom_properties:
+                        status: suggested
+                    - name: KITCHEN
+                      description: Indicates if the property has a kitchen
+                      custom_properties:
+                        status: suggested
+                    - name: LIVING_ROOM
+                      description: Indicates if the property has a living room
+                      custom_properties:
+                        status: suggested
+                    - name: OTHER_ROOMS
+                      description: Indicates if the property has other type of rooms non included in the current list
+                      custom_properties:
+                        status: suggested
+                    - name: TERRACE
+                      description: Indicates if the property has separated toilets
+                      custom_properties:
+                        status: suggested
+                    - name: TOILET
+                      description: Indicates if the property has a terrace
+                      custom_properties:
+                        status: suggested
+                    - name: WHOLE_PROPERTY
+                      description: to be used to describe the property as a whole
+                      custom_properties:
+                        status: suggested

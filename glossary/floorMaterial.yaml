@@ -1,0 +1,90 @@
+version: 1
+source: DataHub
+owners:
+   users:
+     - Francois Laforgia
+   groups:
+     - Business Stewards
+nodes:     
+   - name: AVIV 
+     description: Global AVIV glossary for terms and models unification
+     nodes:
+       - name: _Data
+         nodes:
+           - name: Enums
+             description: Enumerations used by the models
+             nodes:
+                - name: floorMaterial
+                  terms:
+                    - name: ANTI_DUST_CONCRETE
+                      description: Concrete floor that has a smooth finish with non-slip characteristics, which does not accumulate dirt and gives the feeling of being permanently clean.
+                      custom_properties:
+                        status: suggested
+                    - name: ANTI_STATIC
+                      description: Type of floor that is used to impede the creation of electrostatic discharge
+                      custom_properties:
+                        status: suggested
+                    - name: CARPET
+                      description: A carpet is a thick covering of soft material which is laid over a floor or staircase.
+                      custom_properties:
+                        status: suggested
+                    - name: CONCRETE
+                      description: A concrete floor is typically one in which a flat slab is formed of concrete, which is either poured in-situ or precast in a factory
+                      custom_properties:
+                        status: suggested
+                    - name: GRANITE
+                      description: Floor covering made from granite, which consists of a range of natural stones that are made from cooling molten rock in the ground.
+                      custom_properties:
+                        status: suggested
+                    - name: LAMINATE
+                      description: Laminate flooring (also called floating wood tile in the United States) is a multi-layer synthetic flooring product fused together with a lamination process. Laminate flooring simulates wood (or sometimes stone)
+                      custom_properties:
+                        status: suggested
+                    - name: LINOLEUM
+                      description: Foor covering made from materials such as solidified linseed oil (linoxyn), pine resin, ground cork dust, sawdust, and mineral fillers such as calcium carbonate, most commonly on a burlap or canvas backing. Pigments are often added to the materials to create the desired colour finish.
+                      custom_properties:
+                        status: suggested
+                    - name: MARBLE
+                      description: Floor covering made of marble, a hard, porous stone with a high water absorption rate created naturally from calcite, dolomite, or limestone
+                      custom_properties:
+                        status: suggested
+                    - name: PARQUET
+                      description: Flooring composed of wooden blocks arranged in a geometric pattern.
+                      custom_properties:
+                        status: suggested
+                    - name: QUARTZ
+                      description: Any resinous flooring system that utilizes quartz silica as an aggregate
+                      custom_properties:
+                        status: suggested
+                    - name: RAISED_FLOOR
+                      description: General floor covering - A raised floor (also raised flooring, access floor(ing), or raised access computer floor) provides an elevated structural floor above a solid substrate (often a concrete slab) to create a hidden void for the passage of mechanical and electrical services.
+                      custom_properties:
+                        status: previous
+                    - name: SCREED
+                      description: Floor screed is composed of cementitious materials and sand blended based on a suitable mix design and applied to provide a leveled surface for the floor finish which is introduced to the surface of the floor screed. So, floor screed is the base for the floor finish and greatly influences the performance of floor finish.
+                      custom_properties:
+                        status: suggested
+                    - name: STONE
+                      description: Natural stone flooring is a style of tile that's cut directly from stone blocks
+                      custom_properties:
+                        status: suggested
+                    - name: SYNTHETIC
+                      description: Combines naturally occurring materials with man made ones to make sheets, planks, and tiles. Linoleum, vinyl, laminate, plastic, foam and rubber flooring products are all synthetic
+                      custom_properties:
+                        status: suggested
+                    - name: TERRACOTTA
+                      description: Floor made from terracota tiles which are porous, with a red colouring
+                      custom_properties:
+                        status: suggested
+                    - name: TILE
+                      description: Floor covering made of tiles, made from any material or design
+                      custom_properties:
+                        status: suggested
+                    - name: VINYL
+                      description: Vinyl flooring is a product composed of several layers of different materials sandwiched together to form a highly durable, practical and affordable floor.
+                      custom_properties:
+                        status: suggested
+                    - name: WOODEN_PLANK
+                      description: Wood plank flooring is manufactured from timber and comes in various styles, colors, and species
+                      custom_properties:
+                        status: suggested

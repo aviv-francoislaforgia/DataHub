@@ -1,0 +1,52 @@
+version: 1
+source: DataHub
+owners:
+   users:
+     - Francois Laforgia
+   groups:
+     - Business Stewards
+nodes:     
+   - name: AVIV 
+     description: Global AVIV glossary for terms and models unification
+     nodes:
+       - name: _Data
+         nodes:
+           - name: Enums
+             description: Enumerations used by the models
+             nodes:
+                - name: orientation
+                  terms:
+                    - name: NORTH
+                      description: Main direction facing north
+                      custom_properties:
+                        status: suggested
+                    - name: WEST
+                      description: Main direction facing west
+                      custom_properties:
+                        status: suggested
+                    - name: SOUTH
+                      description: Main direction facing south
+                      custom_properties:
+                        status: suggested
+                    - name: EAST
+                      description: Main direction facing east
+                      custom_properties:
+                        status: suggested 
+                    - name: NORTH_EAST
+                      description: Main direction facing north-east
+                      custom_properties:
+                        status: suggested
+                    - name: NORTH_WEST
+                      description: Main direction facing north-west
+                      custom_properties:
+                        status: suggested
+                    - name: SOUTH_EAST
+                      description: Main direction facing south-east
+                      custom_properties:
+                        status: suggested
+                    - name: SOUTH_WEST
+                      description: Main direction facing south-west
+                      custom_properties:
+                        status: suggested
+
+
