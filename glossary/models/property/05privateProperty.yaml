@@ -78,8 +78,8 @@ nodes:
                                    - name: sectionSpec
                                      description: Descriptive block for every room in a specific type of rooms. Example':' il there are 2 bedrooms, there will be one descriptive block per bedroom
                                      custom_properties:
-                                     type: array
-                                     arrayType: data fields
+                                        type: array
+                                        arrayType: data fields
                                      terms: 
 
                                        - name: areaTypeSurface
