@@ -35,12 +35,11 @@ nodes:
                            - name: areaDescription
                              description: Global description of the multiple areas within a property
                              nodes:
-                             
                                - name: area
                                  description: Descriptive block for every type of rooms in the property
-                                 custom_properties:
-                                   type: array
-                                   arrayType: data fields
+                                 #custom_properties:
+                                 #  type: array
+                                 #  arrayType: data fields
                                  terms:
                                    - name: areaType
                                      description: Various rooms of a property. Example, in a house':' bedrooms, kitchen, living room, ...
@@ -48,7 +47,7 @@ nodes:
                                        type: enum
                                        enumType: string
                                        classification: confidential
-                                       compliance: PII
+                                       compliance: PII                                      
                                      contains:
                                        - AVIV._Data.Enums.area.ATTIC
                                        - AVIV._Data.Enums.area.AUXILIARY_ROOMS
@@ -77,9 +76,9 @@ nodes:
                                  nodes:
                                    - name: sectionSpec
                                      description: Descriptive block for every room in a specific type of rooms. Example':' il there are 2 bedrooms, there will be one descriptive block per bedroom
-                                     custom_properties:
-                                        type: array
-                                        arrayType: data fields
+                                     #custom_properties:
+                                     #   type: array
+                                     #   arrayType: data fields
                                      terms: 
 
                                        - name: areaTypeSurface
