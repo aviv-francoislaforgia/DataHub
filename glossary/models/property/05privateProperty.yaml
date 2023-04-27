@@ -22,7 +22,7 @@ nodes:
                      description: current development version (still WIP)
                      nodes:
                        - name: 05 privateProperty
-                         decription: Descriptive information related the characteristics of the private property
+                         description: Descriptive information related the characteristics of the private property
                          terms:
                           - name: legalNumberOfRooms
                             description: Number of rooms available in the property. Related to the local laws.Floating numbers may also be used, because half rooms are possible.
@@ -68,10 +68,10 @@ nodes:
                                    - name: numberOfAreaType
                                      description: Per type of room, number of rooms. Example':' AreaType = "bedroom", numberOfAreaType = 2
                                      custom_properties:
-                                      type: float
-                                      classification: confidential
-                                      compliance: PII
-                                      techRule: if areaType = "WHOLE_PROPERTY" then numberOfAreaType = 1
+                                        type: float
+                                        classification: confidential
+                                        compliance: PII
+                                        techRule: if areaType = "WHOLE_PROPERTY" then numberOfAreaType = 1
 
 
                                  nodes:
@@ -85,18 +85,18 @@ nodes:
                                        - name: areaTypeSurface
                                          description: Surface of each room. 
                                          custom_properties:
-                                         type: float
-                                         classification: confidential
-                                         compliance: PII
+                                           type: float
+                                           classification: confidential
+                                           compliance: PII
 
                                        - name: floorMaterial
                                          description: Floor coating present in the described room. Example':' parquet floor in a bedroom
                                          custom_properties:
-                                         type: enum
-                                         enumType: string
-                                         classification: confidential
-                                         compliance: PII
-                                         contains:
+                                           type: enum
+                                           enumType: string
+                                           classification: confidential
+                                           compliance: PII
+                                           contains:
                                            - AVIV._Data.Enums.floorMaterial.ANTI_DUST_CONCRETE
                                            - AVIV._Data.Enums.floorMaterial.ANTI_STATIC
                                            - AVIV._Data.Enums.floorMaterial.CARPET
