@@ -1,0 +1,24 @@
+version: 1
+source: DataHub
+owners:
+   users:
+     - Francois Laforgia
+   groups:
+     - Business Stewards
+nodes:     
+   - name: AVIV 
+     description: Global AVIV glossary for terms and models unification
+     nodes:
+       - name: _Data
+         description: Everything related to data.
+         nodes:
+           - name: Enums
+             description: Enumerations used by the models
+             nodes:
+                - name:
+                  description: 
+                  terms:
+                    - name: 
+                      description: 
+                      custom_properties:
+                        status: 
