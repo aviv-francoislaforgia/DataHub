@@ -10,11 +10,13 @@ nodes:
      description: Global AVIV glossary for terms and models unification
      nodes:
        - name: _Data
+         description: Everything related to data.
          nodes:
            - name: Enums
              description: Enumerations used by the models
              nodes:
                 - name: floorMaterial
+                  description: Types of floor covering within a property
                   terms:
                     - name: ANTI_DUST_CONCRETE
                       description: Concrete floor that has a smooth finish with non-slip characteristics, which does not accumulate dirt and gives the feeling of being permanently clean.

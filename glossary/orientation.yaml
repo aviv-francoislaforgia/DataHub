@@ -10,11 +10,13 @@ nodes:
      description: Global AVIV glossary for terms and models unification
      nodes:
        - name: _Data
+         description: Everything related to data.
          nodes:
            - name: Enums
              description: Enumerations used by the models
              nodes:
                 - name: orientation
+                  description: Polar orientation
                   terms:
                     - name: NORTH
                       description: Main direction facing north
