@@ -96,7 +96,7 @@ nodes:
                                            enumType: string
                                            classification: confidential
                                            compliance: PII
-                                           contains:
+                                         contains:
                                            - AVIV._Data.Enums.floorMaterial.ANTI_DUST_CONCRETE
                                            - AVIV._Data.Enums.floorMaterial.ANTI_STATIC
                                            - AVIV._Data.Enums.floorMaterial.CARPET
