@@ -109,7 +109,7 @@ nodes:
                     - name: KITCHEN_FULLY_EQUIPPED
                       description: A fully equipped kitchen has all the elements required for cooking. This could include appliances, such as a refrigerator, a freezer, an oven and range, and a dishwasher. It may also include a microwave, and it has cookware, dishware, and silverware
                       custom_properties:
-                        status: 
+                        status: suggested
                     - name: KITCHEN_KITCHEN
                       description: A room or area where food is prepared and cooked
                       custom_properties:
