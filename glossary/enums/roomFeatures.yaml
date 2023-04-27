@@ -1,0 +1,168 @@
+version: 1
+source: DataHub
+owners:
+   users:
+     - Francois Laforgia
+   groups:
+     - Business Stewards
+nodes:     
+   - name: AVIV 
+     description: Global AVIV glossary for terms and models unification
+     nodes:
+       - name: _Data
+         description: Everything related to data.
+         nodes:
+           - name: Enums
+             description: Enumerations used by the models
+             nodes:
+                - name: roomFeatures
+                  description: Available characteristics and specifications per area
+                  terms:
+                    - name: ATTIC
+                      description: ""
+                      custom_properties:
+                        status: suggested
+                    - name: AUXILIARY_ROOMS
+                      description: ""
+                      custom_properties:
+                        status: suggested
+                    - name: BALCONY
+                      description: ""
+                      custom_properties:
+                        status: suggested
+                    - name: BATHROOM_HAS_TOILET
+                      description: A fixture that consists usually of a water-flushed bowl and seat for human necessities
+                      custom_properties:
+                        status: suggested
+                    - name: BATHROOM_HAS_SHOWER
+                      description: A cubicle or bath in which a person stands under a spray of water to wash
+                      custom_properties:
+                        status: suggested
+                    - name: BATHROOM_HAS_BATH
+                      description: A large container for water, used for immersing and washing the body
+                      custom_properties:
+                        status: suggested
+                    - name: BATHROOM_HAS_SEPARATE_TOILET
+                      description: Toilet is separate from the lavatory
+                      custom_properties:
+                        status: suggested
+                    - name: BATHROOM_HAS_CUPBOARD
+                      description: A piece of furniture or a space for storing things, with a door or doors and usually with shelves
+                      custom_properties:
+                        status: suggested
+                    - name: BATHROOM_HAS_BATHTUB 
+                      description: A long, usually rectangular container that you fill with water and sit in to wash the body
+                      custom_properties:
+                        status: suggested
+                    - name: BATHROOM_HAS_WINDOW 
+                      description: Bathroom has a window 
+                      custom_properties:
+                        status: suggested
+                    - name: BATHROOM_HAS_BIDET
+                      description: Bathroom fixture used especially for bathing the intimate area
+                      custom_properties:
+                        status: suggested
+                    - name: BATHROOM_HAS_URINAL
+                      description: Bathroom fixture usually attached to a wall, for male urinating purpose
+                      custom_properties:
+                        status: suggested
+                    - name: BATHROOM_HAS_GUEST_TOILET
+                      description: Has toilet for guests
+                      custom_properties:
+                        status: suggested
+                    - name: BATHROOM_HAS_SEPARATE_BATH_AND_TOILET
+                      description: Bath and toilet are separate
+                      custom_properties:
+                        status: suggested
+                    - name: BATHROOM_HAS_BATHROOM_SINK
+                      description: Bathroom has a lavatory
+                      custom_properties:
+                        status: suggested
+                    - name: BEDROOM
+                      description: ""
+                      custom_properties:
+                        status: suggested
+                    - name: CELLAR
+                      description: ""
+                      custom_properties:
+                        status: suggested
+                    - name: DINING_ROOM
+                      description: ""
+                      custom_properties:
+                        status: suggested
+                    - name: ENTRANCE
+                      description: ""
+                      custom_properties:
+                        status: suggested
+                    - name: GARDEN
+                      description: ""
+                      custom_properties:
+                        status: suggested
+                    - name: KITCHEN_NONE 
+                      description: No kitchen is available
+                      custom_properties:
+                        status: suggested
+                    - name: KITCHEN_STORAGE
+                      description: A storage area within the kitchen
+                      custom_properties:
+                        status: suggested
+                    - name: KITCHEN_FULLY_EQUIPPED
+                      description: A fully equipped kitchen has all the elements required for cooking. This could include appliances, such as a refrigerator, a freezer, an oven and range, and a dishwasher. It may also include a microwave, and it has cookware, dishware, and silverware
+                      custom_properties:
+                        status: suggested
+                    - name: KITCHEN_KITCHEN
+                      description: A room or area where food is prepared and cooked
+                      custom_properties:
+                        status: suggested
+                    - name: KITCHEN_PANTRY 
+                      description: A small room or storage area near a kitchen, where food is kept
+                      custom_properties:
+                        status: previous
+                    - name: KITCHEN_BUILT_IN 
+                      description: kitchen facilities and cabinets are fitted to the room providing a seamless, integrated look
+                      custom_properties:
+                        status: previous
+                    - name: KITCHEN_KITCHENETTE
+                      description: small cooking area usually with only basic facilities like refrigerator, hotplate and sink. Sometimes this is even hidden in a closet.
+                      custom_properties:
+                        status: previous
+                    - name: KITCHEN_OPEN
+                      description: an open-concept kitchen without walls separating it from the rest of the property.
+                      custom_properties:
+                        status: previous
+                    - name: KITCHEN_SEPARATED
+                      description: the kitchen is a room of its own, separated from the rest of the living area.
+                      custom_properties:
+                        status: previous
+                    - name: KITCHEN_FITTED
+                      description: Kitchen with units that are attached to the wall
+                      custom_properties:
+                        status: suggested
+                    - name: KITCHEN_SINGLE_STOREY
+                      description: The kitchen is a single storey extension
+                      custom_properties:
+                        status: suggested
+                    - name: LIVING_ROOM_CHIMNEY
+                      description: A vertical channel or pipe which conducts smoke and combustion gases up from a fire or furnace and typically through the roof of a building 
+                      custom_properties:
+                        status: suggested
+                    - name: LIVING_ROOM_CUPBOARD
+                      description: A piece of furniture or a space for storing things, with a door or doors and usually with shelves 
+                      custom_properties:
+                        status: suggested
+                    - name: OTHER_ROOMS
+                      description: ""
+                      custom_properties:
+                        status: suggested
+                    - name: TERRACE
+                      description: ""
+                      custom_properties:
+                        status: suggested
+                    - name: WHOLE_PROPERTY_CUPBOARD
+                      description: A piece of furniture or a space for storing things, with a door or doors and usually with shelves
+                      custom_properties:
+                        status: suggested
+                    - name: WHOLE_PROPERTY_CHIMNEY
+                      description: A vertical channel or pipe which conducts smoke and combustion gases up from a fire or furnace and typically through the roof of a building
+                      custom_properties:
+                        status: suggested
