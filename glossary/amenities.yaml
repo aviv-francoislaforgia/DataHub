@@ -10,11 +10,13 @@ nodes:
      description: Global AVIV glossary for terms and models unification
      nodes:
        - name: _Data
+         description: Everything related to data.
          nodes:
            - name: Enums
              description: Enumerations used by the models
              nodes:
                 - name: amenities
+                  description: Different available amenities within a property
                   terms:
                     - name: HAS_AIR_CONDITIONING
                       description: Air conditioning is available into the property
