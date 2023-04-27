@@ -1,0 +1,29 @@
+version: 1
+source: DataHub
+owners:
+   users:
+     - Pascale Brun
+     - Francois Laforgia
+     - Jose Avila
+     - Abhijit Chatterjee
+   groups:
+     - Business Stewards
+nodes:     
+   - name: AVIV
+     description: Global AVIV glossary for terms and models unification
+     nodes:
+      - name: _Data
+        description: Everything related to data.
+        nodes:
+          - name: Enums
+            description: Enumerations used by the models
+          - name: Glossary
+            description: all terms, rules and policies used to manage data inside AVIV
+          - name: Models
+            description: AVIV core data models glossary
+      - name: Business
+        description: Everything related to business
+      - name: Finance
+        description: Everything related to finance
+      - name: Product
+        description: Everything related to product
