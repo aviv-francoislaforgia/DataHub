@@ -1,0 +1,5 @@
+source:
+  type: datahub-business-glossary
+  config:
+    file: /Users/francois.laforgia/Documents/dev/dh/BusinessTerms/output/agent.yaml
+    enable_auto_id: 'true'

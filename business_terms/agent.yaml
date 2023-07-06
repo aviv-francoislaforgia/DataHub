@@ -1,0 +1,78 @@
+version: 1
+source: DataHub
+owners:
+  users:
+  - - Francois Laforgia
+    - Pascale Brun
+    - Jose Avila
+    - Abhijit Chatterjee
+  groups:
+  - - Business Stewards
+nodes:
+  name: AVIV
+  description: Global AVIV glossary for terms and models unification
+  nodes:
+    name: Business
+    description: Everything related to business (common terms definitions and KPIs)
+    nodes:
+      name: Terms
+      description: Business terms used accross all AVIV
+      nodes:
+        name: agent
+        description: agent
+        terms:
+        - name: Agent
+          description: An agent is the person in charge of finding and selling or
+            renting the properties. He can be of 2 types, either an adivsor dedicated
+            to renting transaction or an advisor dedicated to selling transactions.
+          custom_properties:
+            LastModifiedOn: '2021-07-27'
+            Local Name: Agent
+        - name: Estate Agent Fee
+          description: A commission-based amount of money received as a fee by a real
+            Estate Agent and that is paid once a property is sold.
+          custom_properties:
+            LastModifiedOn: '2020-07-16'
+            Local Name: Estate Agent Fee
+        - name: Estate agent mandate
+          description: "A mandate is an agreement between a Seller and the Estate\
+            \ Agent(s) regarding the marketing of a property, the agreement duration\
+            \ and obligations for both parties.\n There are three common types of\
+            \ mandates: Sole mandate, Multi-listing mandate and an Open / dual mandate.\n\
+            \ Sole mandate or Exclusive mandate. A sole mandate is when one Estate\
+            \ Agent has exclusive rights to sell your house within a specific period\
+            \ of time\n Multi-listing mandate. A multi-listing mandate is when Agents\
+            \ from different agencies have the right to sell your property. After\
+            \ a sale, the Agent\u2019s commission is split between all listing agencies\
+            \ involved.\n Open / dual mandate / non exclusive. An open mandate means\
+            \ that the property is on the books of more than one Estate Agent, and\
+            \ each Agency has the right to sell the property, without being required\
+            \ to share the commission."
+          custom_properties:
+            LastModifiedOn: '2020-10-22'
+            Local Name: Estate agent mandate
+        - name: Exclusive mandate
+          description: Formal instruction to an estate agent to have the exclusive
+            right to sell a client's property for a period of time.
+          custom_properties:
+            LastModifiedOn: '2020-07-16'
+            Local Name: Exclusive mandate
+        - name: Sale Mandate
+          description: The sales mandate is a bilateral contract signed between an
+            owner and a real estate agent. It is the first step in the transaction
+            and is mandatory for a professional to put a property on the market and
+            find buyers on behalf of the owner.
+          custom_properties:
+            LastModifiedOn: '2020-07-01'
+            Local Name: Mandat de vente
+        - name: Sole agent
+          description: An agent that expects to be the only one with the right to
+            sell your property.
+          custom_properties:
+            LastModifiedOn: '2020-06-30'
+            Local Name: Sole agent
+        - name: Unique Mandate
+          description: ''
+          custom_properties:
+            LastModifiedOn: '2020-06-22'
+            Local Name: Mandataire Unique
